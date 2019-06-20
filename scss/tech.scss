@@ -1,0 +1,40 @@
+.margin-05 {
+    margin: .5rem 0;
+}
+
+.tech-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.tech-border {
+    position: absolute;
+    border: 1px solid $green;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    top: -11px;
+}
+
+.tech {
+    background-color: $green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 218px;
+    height: 314px;
+    padding: 1rem 2.5rem 2.5rem 1rem;
+    border-radius: 5px;
+    position: relative;
+
+    &-logo {
+        width: 110px;
+    }
+
+    &-description {
+        text-align: center;
+        margin: 1rem 0;
+    }
+  }

@@ -24,7 +24,7 @@ body {
   position: relative;
   width: 100%;
 
-  &::before{
+  &::before {
     content: url(../assets/triangle.svg);
     height: $title-decoration-height;
     width: $title-decoration-width;
