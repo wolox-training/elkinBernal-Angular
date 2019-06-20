@@ -14,23 +14,3 @@ $text-small: 12px;
 body {
   font-family: 'Roboto', sans-serif;
 }
-
-.header-title {
-  padding: 8rem 10rem 3rem;
-}
-
-.title {
-  font-size: $text-big;
-  position: relative;
-  width: 100%;
-
-  &::before{
-    content: url(../assets/triangle.svg);
-    height: $title-decoration-height;
-    width: $title-decoration-width;
-    position: absolute;
-    top: -35px;
-    left: -53px;
-    z-index: -1;
-  }
-}
