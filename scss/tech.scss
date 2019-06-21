@@ -1,11 +1,6 @@
-.margin-05 {
-  margin: .5rem 0;
-}
-
 .tech-content {
   margin: 0 auto;
-  padding: 2rem 0;
-  width: 80%;
+  padding: 32px 170px;
 }
 
 .tech {
@@ -16,25 +11,34 @@
   flex-direction: column;
   height: 314px;
   justify-content: flex-start;
-  padding: 1rem 2.5rem 2.5rem 1rem;
+  padding: 16px 40px 40px 16px;
   position: relative;
   width: 218px;
-  
-  &-logo {
-    width: 110px;
-  }
+}
 
-  &-description {
-    margin: 1rem 0;
-    text-align: center;
-  }
-    
-  &-border {
-    border: 1px solid $green;
-    border-radius: 5px;
-    height: 100%;
-    position: absolute;
-    top: -11px;
-    width: 100%;
-  }
+.tech-logo {
+  width: 110px;
+}
+
+.tech-name {
+  margin: 8px 0;
+}
+
+.tech-realease {
+  font-weight: $text-weight-bold;
+  margin: 8px 0;
+}
+
+.tech-description {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.tech-border {
+  border: 1px solid $green;
+  border-radius: 5px;
+  bottom: 11px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
