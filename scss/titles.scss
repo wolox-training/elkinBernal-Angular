@@ -1,0 +1,18 @@
+$title-decoration-height: 90px;
+$title-decoration-width: 70px;
+
+.title {
+  font-size: $text-big;
+  margin: 128px 160px 48px;
+  position: relative;
+
+  &::before {
+    content: url(../assets/triangle.svg);
+    height: $title-decoration-height;
+    left: -53px;
+    position: absolute;
+    top: -35px;
+    width: $title-decoration-width;
+    z-index: -1;
+  }
+}
