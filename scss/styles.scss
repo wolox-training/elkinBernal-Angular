@@ -1,7 +1,6 @@
 $blue: #00ADEE;
 $green: #BED23C;
 $grey: #C4C4C4;
-
 $nav-height: 70px;
 $nav-logo-height: 30px;
 $title-decoration-height: 90px;
@@ -13,24 +12,4 @@ $text-small: 12px;
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-.header-title {
-  padding: 8rem 10rem 3rem;
-}
-
-.title {
-  font-size: $text-big;
-  position: relative;
-  width: 100%;
-
-  &::before {
-    content: url(../assets/triangle.svg);
-    height: $title-decoration-height;
-    width: $title-decoration-width;
-    position: absolute;
-    top: -35px;
-    left: -53px;
-    z-index: -1;
-  }
 }
