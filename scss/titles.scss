@@ -1,0 +1,19 @@
+.header-title {
+  padding: 8rem 10rem 3rem;
+}
+
+.title {
+  font-size: $text-big;
+  position: relative;
+  width: 100%;
+  
+  &::before{
+    content: url(../assets/triangle.svg);
+    height: $title-decoration-height;
+    left: -53px;
+    position: absolute;
+    top: -35px;
+    width: $title-decoration-width;
+    z-index: -1;
+  }
+}
