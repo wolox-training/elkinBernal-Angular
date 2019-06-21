@@ -1,13 +1,12 @@
-.header-title {
-  padding: 8rem 10rem 3rem;
-}
+$title-decoration-height: 90px;
+$title-decoration-width: 70px;
 
 .title {
   font-size: $text-big;
+  margin: 130px 160px 50px;
   position: relative;
-  width: 100%;
-  
-  &::before{
+
+  &::before {
     content: url(../assets/triangle.svg);
     height: $title-decoration-height;
     left: -53px;

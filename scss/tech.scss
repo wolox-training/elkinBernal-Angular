@@ -8,8 +8,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 1rem 0;
-  width: 75%;
+  padding: 30px 170px;
 }
 
 .tech {
@@ -18,35 +17,38 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  height: 314px;
+  height: 300px;
   justify-content: flex-start;
-  margin: 1rem;
-  padding: 0.5rem 2rem 0 0.5rem;
+  padding: 20px;
   position: relative;
-  width: 218px;
+  width: 200px;
 
-  &-logo {
-    height: 100px;
-    width: 100px;
-  }
-
-  &-head {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &-description {
-    margin: 1rem 0;
-    text-align: center;
-  }
-
-  &-border {
+  &::before {
     border: 1px solid $green;
     border-radius: 5px;
+    bottom: 10px;
+    content: '';
     height: 100%;
     position: absolute;
-    top: -11px;
+    right: 10px;
     width: 100%;
   }
+}
+
+.tech-logo {
+  width: 110px;
+}
+
+.tech-name {
+  margin: 10px 0;
+}
+
+.tech-realease {
+  font-weight: $text-weight-bold;
+  margin: 10px 0;
+}
+
+.tech-description {
+  margin: 20px 0;
+  text-align: center;
 }
