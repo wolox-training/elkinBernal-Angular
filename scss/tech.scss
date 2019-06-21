@@ -1,6 +1,6 @@
 .tech-content {
   margin: 0 auto;
-  padding: 32px 170px;
+  padding: 30px 170px;
 }
 
 .tech {
@@ -11,9 +11,20 @@
   flex-direction: column;
   height: 300px;
   justify-content: flex-start;
-  padding: 16px 40px 40px 16px;
+  padding: 20px;
   position: relative;
   width: 200px;
+
+  &::before {
+    border: 1px solid $green;
+    border-radius: 5px;
+    bottom: 10px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    width: 100%;
+  }
 }
 
 .tech-logo {
@@ -21,24 +32,15 @@
 }
 
 .tech-name {
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .tech-realease {
   font-weight: $text-weight-bold;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .tech-description {
-  margin: 16px 0;
+  margin: 20px 0;
   text-align: center;
-}
-
-.tech-border {
-  border: 1px solid $green;
-  border-radius: 5px;
-  bottom: 10px;
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
