@@ -1,1 +1,17 @@
 $nav-height: 90px;
+
+.navbar {
+  background: $white;
+  box-shadow: 0 5px 15px $grey;
+  display: flex;
+  height: $nav-height;
+  justify-content: space-between;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-logo {
+  width: 200px;
+}
