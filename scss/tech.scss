@@ -1,5 +1,9 @@
 .tools-content {
   padding: 0 160px;
+
+  &:first-of-type {
+    margin-top: 80px;
+  }
 }
 
 .tech-content {
