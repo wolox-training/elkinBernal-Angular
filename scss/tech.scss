@@ -61,15 +61,20 @@
   }
 
   .tech-content {
-    grid-template-columns: 80%;
+    grid-template-columns: 60%;
     padding: 10px;
+    row-gap: 50px;
   }
 
   .tech {
     border-bottom: 2px solid #BED23C;
   }
 
-  .tech-content > .tech:first-child {
+  .tech:first-child {
     border-right: none;
+  }
+
+  .tech:last-child {
+    border-bottom: none;
   }
 }
