@@ -51,10 +51,6 @@
 }
 
 @media (max-width: 1024px) {
-  * {
-    font-size: $text-big;
-  }
-
   .tools-content {
     padding: 0;
   }
@@ -66,14 +62,16 @@
   }
 
   .tech {
-    border-bottom: 2px solid #BED23C;
+    border-bottom: 2px solid $green;
   }
 
-  .tech-content > .tech:first-child {
-    border-right: none;
-  }
+  .tech {
+    &:first-child {
+      border-right: none;
+    }
 
-  .tech-content > .tech:last-child {
-    border-bottom: none;
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
