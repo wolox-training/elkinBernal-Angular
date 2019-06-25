@@ -1,5 +1,9 @@
 .tools-content {
   padding: 0 160px;
+
+  &:first-of-type {
+    margin-top: 80px;
+  }
 }
 
 .tech-content {
@@ -31,9 +35,7 @@
     height: 100%;
     position: absolute;
     right: 10px;
-    transition-duration: 0.5s;
-    transition-property: bottom, right;
-    transition-timing-function: ease-in-out;
+    transition: bottom 0.5s ease-in-out, right 0.5s ease-in-out;
     width: 100%;
     z-index: -1;
   }

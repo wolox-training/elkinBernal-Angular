@@ -6,9 +6,11 @@ $nav-height: 90px;
   display: flex;
   height: $nav-height;
   justify-content: space-between;
+  left: 0;
   padding: 30px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 
