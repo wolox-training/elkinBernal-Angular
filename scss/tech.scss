@@ -70,11 +70,11 @@
     border-bottom: 2px solid #BED23C;
   }
 
-  .tech:first-child {
+  .tech-content > .tech:first-child {
     border-right: none;
   }
 
-  .tech:last-child {
+  .tech-content > .tech:last-child {
     border-bottom: none;
   }
 }
