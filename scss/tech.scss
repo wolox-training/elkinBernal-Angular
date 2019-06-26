@@ -49,26 +49,3 @@
   margin: 20px 0;
   text-align: center;
 }
-
-@media (max-width: 1024px) {
-  * {
-    font-size: $text-big;
-  }
-
-  .tools-content {
-    padding: 0;
-  }
-
-  .tech-content {
-    grid-template-columns: 80%;
-    padding: 10px;
-  }
-
-  .tech {
-    border-bottom: 2px solid #BED23C;
-  }
-
-  .tech-content > .tech:first-child {
-    border-right: none;
-  }
-}
