@@ -1,0 +1,10 @@
+### Sass ###
+.sass-cache/
+.scss-cache/
+scss/*.css.map
+scss/*.sass.map
+scss/*.scss.map
+scss/*.css
+
+## System ##
+.DS_Store
