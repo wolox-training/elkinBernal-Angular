@@ -49,3 +49,29 @@
   margin: 20px 0;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .tools-content {
+    padding: 0;
+  }
+
+  .tech-content {
+    grid-template-columns: 60%;
+    padding: 10px;
+    row-gap: 50px;
+  }
+
+  .tech {
+    border-bottom: 2px solid $green;
+  }
+
+  .tech {
+    &:first-child {
+      border-right: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

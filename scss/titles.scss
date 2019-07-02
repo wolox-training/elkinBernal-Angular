@@ -19,3 +19,9 @@ $title-decoration-width: 70px;
     z-index: -1;
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar-title {
+    display: none;
+  }
+}

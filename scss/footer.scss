@@ -18,3 +18,10 @@
   color: $white;
   font-size: $text-small;
 }
+
+@media (max-width: 1024px) {
+  .footer-copy-right {
+    align-self: center;
+    margin: 50px 0 20px;
+  }
+}
