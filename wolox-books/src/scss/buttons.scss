@@ -1,0 +1,14 @@
+@import 'colors';
+
+.btn {
+  border: 2px solid $green;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: $green;
+  color: $white;
+}

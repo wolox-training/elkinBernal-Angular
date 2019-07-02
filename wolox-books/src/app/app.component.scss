@@ -1,4 +1,5 @@
 @import '../scss/colors';
+@import '../scss/buttons';
 
 :host {
   align-items: center;
@@ -28,7 +29,8 @@
 }
 
 .form {
-  margin: 30px 0;
+  border-bottom: 2px solid lighten($grey, 10%);
+  padding: 30px 0 20px;
 }
 
 .control {
@@ -45,4 +47,9 @@
 .ctrl-input {
   border-radius: 5px;
   height: 35px;
+}
+
+.btn-login {
+  color: $green;
+  margin-top: 20px;
 }
