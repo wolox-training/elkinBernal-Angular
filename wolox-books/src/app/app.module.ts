@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RegisterModule } from './screens/Sign-up/sign-up.module';
+
 import { AppRoutingModule } from './app-routing.module';
-import { LoginModule } from './screens/login/login.module';
+
+import { UserModule } from './screens/User/user.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,8 @@ import { LoginModule } from './screens/login/login.module';
   ],
   imports: [
     BrowserModule,
-    RegisterModule,
-    LoginModule,
-    AppRoutingModule
+    UserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
