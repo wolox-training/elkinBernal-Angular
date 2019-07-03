@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RegisterModule } from './screens/Register/register.module';
+import { RegisterModule } from './screens/Sign-up/sign-up.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './screens/login/login.module';
 

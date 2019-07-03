@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RegisterComponent } from './register.component';
+import { SignUpComponent } from './sign-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
       path: 'sign-up',
-      component: RegisterComponent
+      component: SignUpComponent
   }
 ]
 
 @NgModule({
   declarations: [
-    RegisterComponent
+    SignUpComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +23,6 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forChild(routes)
   ],
-  exports: [RegisterComponent]
+  exports: [SignUpComponent]
 })
 export class RegisterModule { }
