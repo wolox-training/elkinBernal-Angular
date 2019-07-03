@@ -1,0 +1,30 @@
+@import 'src/scss/colors';
+
+.content-auth {
+  align-items: center;
+  border-top: 5px solid $blue;
+  box-shadow: 0 1px 5px $grey;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.content-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 135px;
+}
+
+.title {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.logout-btn {
+  cursor: pointer;
+}

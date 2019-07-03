@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { UserModule } from './screens/User/user.module';
 import { AuthComponent } from './components/auth/auth.component';
+import { LocalStorageService } from './services/local-storage.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AuthComponent } from './components/auth/auth.component';
     UserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
