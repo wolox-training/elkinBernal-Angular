@@ -8,16 +8,21 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   private BASE_URL = 'https://wbooks-api-stage.herokuapp.com/api/v1';
+  private httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    })
+  };
 
   constructor(private http: HttpClient) { }
 
   createUser(data): Observable<any> {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
-    return this.http.post(`${this.BASE_URL}/users`, data, httpOptions)
+    return this.http.post(`${this.BASE_URL}/users`, data, this.httpOptions);
+  }
+
+  login(data): Observable<any> {
+    return this.http.post(`${this.BASE_URL}/users/sessions`, data, this.httpOptions)
   }
 
 
