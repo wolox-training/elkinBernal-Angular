@@ -7,15 +7,15 @@ import { Router } from '@angular/router';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent implements OnInit {
+export class AuthComponent {
   title = 'BOOKS';
 
-  constructor(private localStorageService: LocalStorageService, private router: Router) { }
+  constructor(
+    private localStorageService: LocalStorageService,
+    private router: Router
+  ) { }
 
-  ngOnInit() {
-  }
-
-  logout(){
+  logout() {
     this.localStorageService.removeValue('access_token');
     this.router.navigate(['login']);
   }

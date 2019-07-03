@@ -15,7 +15,9 @@ export class UserService {
     })
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   createUser(data): Observable<any> {
     return this.http.post(`${this.BASE_URL}/users`, data, this.httpOptions);
@@ -24,6 +26,5 @@ export class UserService {
   login(data): Observable<any> {
     return this.http.post(`${this.BASE_URL}/users/sessions`, data, this.httpOptions)
   }
-
 
 }

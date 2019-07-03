@@ -7,22 +7,19 @@ import { SignUpComponent } from './screens/Sign-up/sign-up.component';
 const routes: Routes = [{
   path: '',
   component: UserComponent,
-  children: [
-    {
-      path: '',
-      pathMatch: 'prefix',
-      redirectTo: 'login',
-    },
-    {
-      path: 'sign-up',
-      component: SignUpComponent
-    },
-    {
-      path: 'login',
-      component: LoginComponent
-    }]
-}
-];
+  children: [{
+    path: '',
+    pathMatch: 'prefix',
+    redirectTo: 'login',
+  }, {
+    path: 'sign-up',
+    component: SignUpComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  }]
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

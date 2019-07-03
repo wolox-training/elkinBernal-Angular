@@ -12,7 +12,11 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private userService: UserService, private localStorageService: LocalStorageService, private router: Router) { }
+  constructor(
+    private userService: UserService,
+    private localStorageService: LocalStorageService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.form = new FormGroup({

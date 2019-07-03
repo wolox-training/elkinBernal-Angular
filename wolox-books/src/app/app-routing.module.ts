@@ -6,11 +6,10 @@ import { AuthComponent } from './components/auth/auth.component';
 const routes: Routes = [{
     path: '',
     component: UserComponent,
-},{
+}, {
     path: 'auth',
     component: AuthComponent
-}
-]
+}]
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
