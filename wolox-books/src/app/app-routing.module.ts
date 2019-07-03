@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'prefix',
-        redirectTo: '/sign-up',
+        redirectTo: '/login',
     }
 ]
 
