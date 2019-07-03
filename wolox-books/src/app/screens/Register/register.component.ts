@@ -30,6 +30,8 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.createUser(this.form.value)
+    this.userService.createUser(this.form.value).subscribe(e => {
+      console.log(e);
+    })
   }
 }
