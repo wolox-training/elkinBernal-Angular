@@ -1,3 +1,24 @@
-<div>
-  {{title}}
+<div class="container">
+  <img class="logo" src="../assets/wolox_logo.svg" alt="Wolox">
+  <h4 class="title">{{title}}</h4>
+  <form [formGroup]="form.get('user')" class="form">
+    <div class="control">
+      <label for="firstname" class="ctrl-label">First name</label>
+      <input type="text" id="firstname" formControlName="firstname" class="ctrl-input">
+    </div>
+    <div class="control">
+      <label for="lastname" class="ctrl-label">Last name</label>
+      <input type="text" id="lastname" formControlName="lastname" class="ctrl-input">
+    </div>
+    <div class="control">
+      <label for="email" class="ctrl-label">Email</label>
+      <input type="text" id="email" formControlName="email" class="ctrl-input">
+    </div>
+    <div class="control">
+      <label for="password" class="ctrl-label">Password</label>
+      <input type="password" formControlName="password" id="password" class="ctrl-input">
+    </div>
+    <button class="btn btn-primary" (click)="onSubmit()">Sign up</button>
+  </form>
+  <button class="btn btn-login">Login</button>
 </div>
