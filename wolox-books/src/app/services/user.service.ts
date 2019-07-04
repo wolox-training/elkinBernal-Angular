@@ -34,7 +34,11 @@ export class UserService {
   }
 
   isLogin(): boolean {
-    return !!this.localStorageService.getValue('access_token');
+    return !!this.getToken();
+  }
+
+  getToken(): string {
+    return this.localStorageService.getValue('access_token');
   }
 
 }
