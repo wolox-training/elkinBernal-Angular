@@ -1,1 +1,5 @@
-<p>book-card works!</p>
+<div>
+  <img [src]="item.image_url ? item.image_url : ''" [alt]="item.image_url">
+  <h3>{{item.title}}</h3>
+  <p>{{item.author}}</p>
+</div>
