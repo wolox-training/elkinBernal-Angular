@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { UserModule } from './screens/User/user.module';
+import { UnauthModule } from './screens/unauth/unauth.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { UserModule } from './screens/User/user.module';
   ],
   imports: [
     BrowserModule,
-    UserModule,
+    UnauthModule,
     AppRoutingModule,
   ],
   providers: [],
