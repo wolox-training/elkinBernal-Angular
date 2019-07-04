@@ -1,0 +1,12 @@
+@import 'src/scss/colors';
+
+:host {
+  background-color: lighten( $grey, 20%);
+  display: grid;
+  grid-auto-rows: 240px;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 210px);
+  justify-content: center;
+  margin-top: 60px;
+  padding: 60px 0;
+}

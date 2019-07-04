@@ -14,7 +14,9 @@ export class BooksService {
     })
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   getBooks() {
     return this.http.get(`${environment.base_url}/books`, this.httpOptions)

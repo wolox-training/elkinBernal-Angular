@@ -4,10 +4,15 @@ import { BookListComponent } from './book-list.component';
 import { BookCardComponent } from '../components/book-card/book-card.component';
 
 @NgModule({
-  declarations: [BookListComponent, BookCardComponent],
+  declarations: [
+    BookListComponent,
+    BookCardComponent
+  ],
   imports: [
     CommonModule
   ],
-  exports: [BookListComponent]
+  exports: [
+    BookListComponent
+  ]
 })
 export class BookListModule { }

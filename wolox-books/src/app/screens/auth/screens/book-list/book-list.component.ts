@@ -9,7 +9,10 @@ import { BooksService } from 'src/app/services/books.service';
 export class BookListComponent implements OnInit {
 
   books = [];
-  constructor(private bookService: BooksService) { }
+
+  constructor(
+    private bookService: BooksService
+  ) { }
 
   ngOnInit() {
     this.bookService.getBooks().subscribe((res: object[]) => {

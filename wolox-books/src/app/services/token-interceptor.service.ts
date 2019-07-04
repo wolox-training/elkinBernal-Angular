@@ -5,7 +5,9 @@ import { UserService } from './user.service';
 @Injectable()
 export class TokenInterceptorService implements HttpInterceptor {
 
-  constructor(private injector: Injector) { }
+  constructor(
+    private injector: Injector
+  ) { }
 
   intercept(req, next) {
     let userService = this.injector.get(UserService)
