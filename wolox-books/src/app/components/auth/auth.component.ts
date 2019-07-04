@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { LocalStorageService } from 'src/app/services/local-storage.service';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/screens/unauth/user.service';
 
 @Component({
   selector: 'app-auth',
@@ -11,12 +11,12 @@ export class AuthComponent {
   title = 'BOOKS';
 
   constructor(
-    private localStorageService: LocalStorageService,
+    private UserService: UserService,
     private router: Router
   ) { }
 
   logout() {
-    this.localStorageService.removeValue('access_token');
+    this.UserService.logout()
     this.router.navigate(['login']);
   }
 
