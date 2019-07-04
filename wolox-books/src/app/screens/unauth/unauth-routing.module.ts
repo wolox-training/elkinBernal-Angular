@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { UnauthComponent } from './unauth.component';
 import { LoginComponent } from './screens/Login/login.component';
 import { SignUpComponent } from './screens/Sign-up/sign-up.component';
+import { UnauthGuard } from 'src/app/guards/unauth.guard';
 
 const routes: Routes = [{
   path: '',
   component: UnauthComponent,
+  canActivate: [UnauthGuard],
   children: [
     {
       path: '',
