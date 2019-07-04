@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  private BASE_URL = 'https://wbooks-api-stage.herokuapp.com/api/v1';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -18,11 +18,11 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   createUser(data): Observable<any> {
-    return this.http.post(`${this.BASE_URL}/users`, data, this.httpOptions);
+    return this.http.post(`${environment.base_url}/users`, data, this.httpOptions);
   }
 
   login(data): Observable<any> {
-    return this.http.post(`${this.BASE_URL}/users/sessions`, data, this.httpOptions)
+    return this.http.post(`${environment.base_url}/users/sessions`, data, this.httpOptions)
   }
 
 
