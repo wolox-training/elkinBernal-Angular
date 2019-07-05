@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -11,13 +10,11 @@ export class AuthComponent {
   title = 'BOOKS';
 
   constructor(
-    private UserService: UserService,
-    private router: Router
+    private UserService: UserService
   ) { }
 
   logout() {
-    this.UserService.logout()
-    this.router.navigate(['login']);
+    this.UserService.logout();
   }
 
 }

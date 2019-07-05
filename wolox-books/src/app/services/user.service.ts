@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,7 @@ export class UserService {
   constructor(
     private http: HttpClient,
     private localStorageService: LocalStorageService,
+    private router: Router
   ) { }
 
   createUser(data): Observable<any> {
@@ -31,6 +33,7 @@ export class UserService {
 
   logout(): void {
     this.localStorageService.removeValue('access_token');
+    this.router.navigate(['login']);
   }
 
   isLogin(): boolean {
