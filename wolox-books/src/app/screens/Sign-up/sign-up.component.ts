@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from './user.service';
+import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: 'app-sign-up',
+  templateUrl: './sign-up.component.html',
+  styleUrls: ['./sign-up.component.scss']
 })
-export class RegisterComponent implements OnInit {
+export class SignUpComponent implements OnInit {
   title = 'BOOKS';
   form: FormGroup;
 
-  constructor(private userService: UserService) {
-
-  }
+  constructor(private userService: UserService, private route: Router) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -31,7 +30,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
     this.userService.createUser(this.form.value).subscribe(e => {
-      console.log(e);
+      this.route.navigate(['/login']);
     })
   }
 }
