@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BookDetailComponent implements OnInit {
   
-  book = {};
+  book;
 
   constructor(
     private bookService: BooksService,

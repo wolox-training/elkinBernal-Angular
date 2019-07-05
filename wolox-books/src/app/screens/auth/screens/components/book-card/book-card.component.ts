@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BookCardComponent {
 
-  @Input() item: object;
+  @Input() item;
 
 }
