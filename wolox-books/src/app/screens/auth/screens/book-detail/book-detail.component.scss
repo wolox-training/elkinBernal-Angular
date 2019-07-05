@@ -11,12 +11,18 @@
 
 .detail {
   background-color: $white;
+  box-shadow: 2px 2px 4px $grey;
   column-gap: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 360px;
   padding: 30px 20px;
   width: 990px;
+}
+
+.genre {
+  color: $grey;
+  font-size: 1.2rem;
 }
 
 .title {
@@ -34,6 +40,7 @@
 }
 
 .detail-info {
+  color: $grey;
   margin: 10px 0;
 }
 
