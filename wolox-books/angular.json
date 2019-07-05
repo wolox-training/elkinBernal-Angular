@@ -56,14 +56,14 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "es": {
+              "aot": true,
+              "outputPath": "dist/wolox-books-es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es"
             }
-          },
-          "es": {
-            "aot": true,
-            "outputPath": "dist/wolox-books-es/",
-            "i18nFile": "src/locale/messages.es.xlf",
-            "i18nFormat": "xlf",
-            "i18nLocale": "es"
           }
         },
         "serve": {
