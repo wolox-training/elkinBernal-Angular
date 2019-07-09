@@ -1,4 +1,4 @@
-<img class="img" *ngIf="item.image_url; else defaultImg" [src]="item.image_url" [alt]="item.image_url">
+<img class="img" *ngIf="item.image_url; else defaultImg" [src]="item.image_url" [alt]="item.title">
 <ng-template #defaultImg>
     <div class="img-default"></div>
 </ng-template>
