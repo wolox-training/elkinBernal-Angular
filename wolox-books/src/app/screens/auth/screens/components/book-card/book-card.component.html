@@ -1,6 +1,5 @@
-<img class="img" *ngIf="item.image_url; else defaultImg" [src]="item.image_url" [alt]="item.title">
-<ng-template #defaultImg>
-    <div class="img-default"></div>
-</ng-template>
+<div class="img-default">
+  <img class="img" *ngIf="item.image_url; else defaultImg" [src]="item.image_url" [alt]="item.title">
+</div>
 <h3 class="title">{{item.title}}</h3>
 <p class="author">{{item.author}}</p>
