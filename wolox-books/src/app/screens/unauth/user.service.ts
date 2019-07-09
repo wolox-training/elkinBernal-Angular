@@ -36,7 +36,7 @@ export class UserService {
     this.router.navigate(['login']);
   }
 
-  isLogin(): boolean {
+  isLogged(): boolean {
     return !!this.localStorageService.getValue('access_token');
   }
 
