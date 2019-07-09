@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from 'src/app/services/books.service';
 import { Router } from '@angular/router';
+import { Book } from 'src/app/models/book';
 
 @Component({
   selector: 'app-book-list',
@@ -17,7 +18,7 @@ export class BookListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.bookService.getBooks().subscribe((res: object[]) => {
+    this.bookService.getBooks().subscribe((res: Book[]) => {
       this.books = res;
     })
   }
