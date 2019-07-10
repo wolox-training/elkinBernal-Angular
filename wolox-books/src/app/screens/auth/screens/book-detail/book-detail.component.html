@@ -1,8 +1,7 @@
 <div class="detail">
-  <img class="img" *ngIf="book?.image_url; else defaultImg" [src]="book?.image_url" [alt]="book?.title">
-  <ng-template #defaultImg>
-    <div class="img-default"></div>
-  </ng-template>
+  <div class="img-default">
+    <img class="img" *ngIf="book?.image_url;" [src]="book?.image_url" [alt]="book?.title">
+  </div>
   <div class="content">
     <h2 class="title">{{book?.title}} <span class="genre">({{book?.genre}})</span></h2>
     <div class="body">
