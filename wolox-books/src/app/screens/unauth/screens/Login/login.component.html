@@ -1,0 +1,12 @@
+<form [formGroup]="form.get('session')" class="form">
+    <div class="control">
+        <label for="email" class="ctrl-label">Email</label>
+        <input type="text" id="email" formControlName="email" class="ctrl-input">
+    </div>
+    <div class="control">
+        <label for="password" class="ctrl-label">Password</label>
+        <input type="password" formControlName="password" id="password" class="ctrl-input">
+    </div>
+    <button class="btn btn-primary" (click)="onSubmit()">Login</button>
+</form>
+<a class="btn btn-default" [routerLink]="['/sign-up']">Sign up</a>

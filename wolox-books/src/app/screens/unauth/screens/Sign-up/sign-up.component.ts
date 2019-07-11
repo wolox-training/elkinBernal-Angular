@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { UserService } from './user.service';
+import { UserService } from '../../user.service';
 import { Router } from '@angular/router';
 
 
@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
-  title = 'BOOKS';
   form: FormGroup;
 
   constructor(private userService: UserService, private route: Router) { }

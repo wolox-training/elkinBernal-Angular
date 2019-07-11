@@ -1,0 +1,24 @@
+<form [formGroup]="form.get('user')" class="form">
+  <div class="control">
+    <label for="firstname" class="ctrl-label">First name</label>
+    <input type="text" id="firstname" formControlName="first_name" class="ctrl-input">
+  </div>
+  <div class="control">
+    <label for="lastname" class="ctrl-label">Last name</label>
+    <input type="text" id="lastname" formControlName="last_name" class="ctrl-input">
+  </div>
+  <div class="control">
+    <label for="email" class="ctrl-label">Email</label>
+    <input type="text" id="email" formControlName="email" class="ctrl-input">
+  </div>
+  <div class="control">
+    <label for="password" class="ctrl-label">Password</label>
+    <input type="password" formControlName="password" id="password" class="ctrl-input">
+  </div>
+  <div class="control">
+    <label for="password_confirmation" class="ctrl-label">Password Confirmation</label>
+    <input type="password" formControlName="password_confirmation" id="password_confirmation" class="ctrl-input">
+  </div>
+  <button class="btn btn-primary" (click)="onSubmit()">Sign up</button>
+</form>
+<a class="btn btn-default" [routerLink]="['/login']">Login</a>
