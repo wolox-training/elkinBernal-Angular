@@ -40,4 +40,8 @@ export class UserService {
     return !!this.localStorageService.getValue('access_token');
   }
 
+  getToken(): string {
+    return this.localStorageService.getValue('access_token');
+  }
+
 }
