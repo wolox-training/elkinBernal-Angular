@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from '../../user.service';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +12,11 @@ import { UserService } from '../../user.service';
 export class LoginComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private userService: UserService) { }
+  constructor(
+    private userService: UserService,
+    private localStorageService: LocalStorageService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -22,8 +28,9 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.login(this.form.value).subscribe(res => {
-      console.log(res);
+    this.userService.login(this.form.value).subscribe(({ access_token }) => {
+      this.localStorageService.setValue('access_token', access_token)
+      this.router.navigate(['auth']);
     })
   }
 

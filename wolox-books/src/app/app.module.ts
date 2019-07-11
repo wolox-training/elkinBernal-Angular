@@ -3,20 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { AppRoutingModule } from './app-routing.module';
-
+import { LocalStorageService } from './services/local-storage.service';
+import { AuthComponent } from './components/auth/auth.component';
 import { UnauthModule } from './screens/unauth/unauth.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     UnauthModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

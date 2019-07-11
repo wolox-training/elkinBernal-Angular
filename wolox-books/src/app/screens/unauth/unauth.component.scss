@@ -1,6 +1,13 @@
 @import 'src/scss/colors';
 @import 'src/scss/buttons';
 
+:host {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
 .container {
   background-color: lighten($grey, 20%);
   border-top: 5px solid $blue;

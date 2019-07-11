@@ -3,7 +3,6 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from '../../user.service';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -12,7 +11,10 @@ import { Router } from '@angular/router';
 export class SignUpComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private userService: UserService, private route: Router) { }
+  constructor(
+    private userService: UserService,
+    private route: Router
+  ) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
