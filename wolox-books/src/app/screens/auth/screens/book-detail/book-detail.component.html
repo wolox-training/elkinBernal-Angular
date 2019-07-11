@@ -1,0 +1,13 @@
+<div class="detail">
+  <div class="img-default">
+    <img class="img" *ngIf="book?.image_url;" [src]="book?.image_url" [alt]="book?.title">
+  </div>
+  <div class="content">
+    <h2 class="title">{{book?.title}} <span class="genre">({{book?.genre}})</span></h2>
+    <div class="body">
+      <p class="detail-info"><span class="sub-title">Book author:</span> {{book?.author}}</p>
+      <p class="detail-info"><span class="sub-title">Publisher</span> {{book?.publisher}}</p>
+      <p class="detail-info"><span class="sub-title">Year of publication</span> {{book?.year}}</p>
+    </div>
+  </div>
+</div>

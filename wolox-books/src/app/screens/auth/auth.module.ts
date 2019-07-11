@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 import { BookListModule } from './screens/book-list/book-list.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from 'src/app/services/token-interceptor.service';
+import { BookDetailModule } from './screens/book-detail/book-detail.module';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
@@ -11,6 +12,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   imports: [
     CommonModule,
     BookListModule,
+    BookDetailModule,
     AppRoutingModule
   ],
   exports: [AuthComponent],

@@ -1,0 +1,62 @@
+@import 'src/scss/colors';
+
+:host {
+  background-color: lighten( $grey, 20%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding-top: 120px;
+  width: 100vw;
+}
+
+.detail {
+  background-color: $white;
+  box-shadow: 2px 2px 4px $grey;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 360px;
+  padding: 30px 20px;
+  width: 990px;
+}
+
+.genre {
+  color: $grey;
+  font-size: 1.2rem;
+}
+
+.title {
+  border-bottom: 3px solid $green;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-info {
+  color: $grey;
+  margin: 10px 0;
+}
+
+.sub-title {
+  font-weight: bold;
+}
+
+.img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.img-default {
+  background-color: lighten( $grey, 20%);
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
