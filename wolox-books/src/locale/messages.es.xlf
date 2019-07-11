@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="author" datatype="html">
+        <source>Book author</source>
+        <target>Autor del libro</target>
+        <note priority="1" from="meaning">This is the name of the book's author</note>
+      </trans-unit>
+      <trans-unit id="publisher" datatype="html">
+        <source>Publisher</source>
+        <target>Editorial</target>
+        <note priority="1" from="meaning">Describe the publisher printing</note>
+      </trans-unit>
+      <trans-unit id="yearpublication" datatype="html">
+        <source>Year of publication</source>
+        <target>Año de publicación</target>
+        <note priority="1" from="meaning">Describe the year of publication</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
