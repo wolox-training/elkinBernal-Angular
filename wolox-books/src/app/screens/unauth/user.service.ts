@@ -31,9 +31,13 @@ export class UserService {
     return this.http.post(`${environment.base_url}/users/sessions`, data, this.httpOptions)
   }
 
-  logout() {
+  logout(): void {
     this.localStorageService.removeValue('access_token');
     this.router.navigate(['login']);
+  }
+
+  isLogged(): boolean {
+    return !!this.localStorageService.getValue('access_token');
   }
 
 }

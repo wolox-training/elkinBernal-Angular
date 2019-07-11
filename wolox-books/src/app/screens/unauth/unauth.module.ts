@@ -5,16 +5,16 @@ import { LoginModule } from './screens/Login/login.module';
 import { RegisterModule } from './screens/Sign-up/sign-up.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UnauthComponent } from './unauth.component';
-import { UnauthRoutingModule } from './unauth-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
   declarations: [UnauthComponent],
   imports: [
     CommonModule,
-    UnauthRoutingModule,
     RegisterModule,
     LoginModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   exports: [UnauthComponent]
 })
